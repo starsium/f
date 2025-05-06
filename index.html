@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мій Друг AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>👋 Створи свого Друга</h1>
+    <form id="create-form">
+      <input type="text" id="name" placeholder="Ім’я" required />
+      <input type="number" id="age" placeholder="Вік" required />
+      <select id="personality">
+        <option value="funny">Веселий</option>
+        <option value="serious">Серйозний</option>
+        <option value="romantic">Романтичний</option>
+        <option value="kind">Добрий</option>
+      </select>
+      <button type="submit">Створити</button>
+    </form>
+
+    <div id="chat-section" class="hidden">
+      <h2>Чат з <span id="friend-name"></span></h2>
+      <div id="chat-box"></div>
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Напиши щось..." required />
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
